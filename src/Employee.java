@@ -1,6 +1,6 @@
 public class Employee {
 
-    public static String compony;//静态默认123
+    public static String compony;//静态默认1
     public static String address = "上海市普陀区";//静态默认
     public String employeeName;
 
