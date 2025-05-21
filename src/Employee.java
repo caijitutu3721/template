@@ -2,8 +2,8 @@ public class Employee {
 
     public static String compony;//静态默认1
     public static String address = "上海市普陀区";//静态默认
-    public String Level = "P0"
-    ;
+    public String Level = "P0";
+    public String interested ;
 
     private String name;
     private int age;
@@ -40,16 +40,19 @@ public class Employee {
     public void toilet(Employee this) {
         System.out.println("员工在上厕所");
     }
+    public void lunch(Employee this) {
+        System.out.println("员工在吃饭");
+    }
 
 
     //对象中的非静态方法
-    public void show1(Employee this) {
+    public void showInfo(Employee this) {
         System.out.println(this.name + "," + this.age + "," + this.Level + "," + compony + "," + address);
-        this.show2();
+        this.show1();
     }
 
     //对象中的非静态方法
-    public void show2(Employee this) {
+    public void show1(Employee this) {
         System.out.println("我是show2");
     }
 

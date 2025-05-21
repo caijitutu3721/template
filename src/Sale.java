@@ -1,6 +1,7 @@
- class Sale extends SaleManager {
+class Sale extends SaleManager {
 
-     String level = "P2";
+    public String level = "销售员P3";
+
 
     Sale() {
         super();
@@ -10,15 +11,28 @@
         super(name, age);
     }
 
+
+    //成员变量的就近原则
     public void saleShow() {
-        String level = "saleShow P2";
-        System.out.println(level);
-        System.out.println(this.level);
-        System.out.println(super.level);
+        String level = "Sale类方法中的销售员P3";
+        System.out.println(level);//Sale类方法中的销售员P3
+        System.out.println(this.level);//销售员P3
+        System.out.println(super.level);//经理P4
+
+        System.out.println(hobby);      //经理打羽毛球
+        System.out.println(this.hobby); //经理打羽毛球
+        System.out.println(super.hobby);//经理打羽毛球
+    }
+    //成员方法的就近原则
+    public void eat() {
+        lunch();//子调父
+        this.lunch();//子调父
+        super.lunch();//子调父
     }
 
     @Override
     public void work() {
+        super.work2();//调用原来方法
         System.out.println("销售员在销售");
     }
 }

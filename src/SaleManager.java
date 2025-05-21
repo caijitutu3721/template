@@ -1,10 +1,12 @@
 public class SaleManager extends Employee {
     private double bonus;
-    public String level ="P4";
+    public String level = "经理P4";
+    public String hobby = "经理打羽毛球";
 
 
     public SaleManager() {
-        super();
+        this(null, 0,1000);
+
     }
 
     public SaleManager(String name, int age, double bonus) {
@@ -12,8 +14,9 @@ public class SaleManager extends Employee {
         this.bonus = bonus;
     }
 
+
     public SaleManager(String name, int age) {
-        super(name,age);
+        super(name, age);
     }
 
     public void setBonus(double bonus) {
@@ -25,10 +28,13 @@ public class SaleManager extends Employee {
     }
 
 
-
     @Override
     public void work() {
+        super.work();//同时调用原方法
         System.out.println("经理在管理销售员");
     }
 
+    public void work2() {
+        super.work();
+    }
 }
