@@ -1,5 +1,7 @@
 public class SaleManager extends Employee {
     private double bonus;
+    public String level ="P4";
+
 
     public SaleManager() {
         super();
@@ -10,6 +12,10 @@ public class SaleManager extends Employee {
         this.bonus = bonus;
     }
 
+    public SaleManager(String name, int age) {
+        super(name,age);
+    }
+
     public void setBonus(double bonus) {
         this.bonus = bonus;
     }
@@ -18,8 +24,11 @@ public class SaleManager extends Employee {
         return bonus;
     }
 
+
+
     @Override
     public void work() {
         System.out.println("经理在管理销售员");
     }
+
 }
