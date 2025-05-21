@@ -1,6 +1,6 @@
- class Sale extends SaleManager {
+class Sale extends SaleManager {
 
-     String level = "P2";
+    String level = "销售员P2";
 
     Sale() {
         super();
@@ -10,11 +10,13 @@
         super(name, age);
     }
 
+
+
     public void saleShow() {
-        String level = "saleShow P2";
-        System.out.println(level);
-        System.out.println(this.level);
-        System.out.println(super.level);
+        String level = "Sale类方法中的销售员P2";
+        System.out.println(level);//Sale类方法中的销售员P2
+        System.out.println(this.level);//销售员P2
+        System.out.println(super.level);//经理P4
     }
 
     @Override

@@ -17,5 +17,12 @@ public class AppEnter {
         sm1.toilet();//子调父
         sm1.work();//调重写
 
+        Sale s1 = new Sale();
+        s1.toilet();//子调父
+        s1.saleShow();//this super 就近原则
+
+        System.out.println("========继承成员方法========");
+        s1.interested= "底层人玩游戏";
+
     }
 }
