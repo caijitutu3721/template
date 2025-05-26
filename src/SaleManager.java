@@ -5,7 +5,7 @@ public class SaleManager extends Employee {
 
 
     public SaleManager() {
-        this(null, 0,1000);
+        this(null, 0, 1000);
 
     }
 
@@ -37,4 +37,9 @@ public class SaleManager extends Employee {
     public void work2() {
         super.work();
     }
+
+    public void saleManagerOnly() {
+        System.out.println("销售经理特有方法");
+    }
+
 }

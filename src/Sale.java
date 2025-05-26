@@ -23,6 +23,7 @@ class Sale extends SaleManager {
         System.out.println(this.hobby); //经理打羽毛球
         System.out.println(super.hobby);//经理打羽毛球
     }
+
     //成员方法的就近原则
     public void eat() {
         lunch();//子调父
@@ -30,9 +31,13 @@ class Sale extends SaleManager {
         super.lunch();//子调父
     }
 
+    public void saleOnly() {
+        System.out.println("销售员特有方法");
+    }
+
     @Override
     public void work() {
-        super.work2();//调用原来方法
+        super.work2();//调用顶级父类的方法
         System.out.println("销售员在销售");
     }
 }
