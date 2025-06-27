@@ -1,3 +1,5 @@
+package Extend;
+
 public class AppEnter {
     public static void main(String[] args) {
         Employee.compony = "上海交大";

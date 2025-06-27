@@ -1,3 +1,5 @@
+package Extend;
+
 public class Employee {
 
     public static String compony;//静态默认1

@@ -1,3 +1,5 @@
+package Extend;
+
 public class SaleIntern extends SaleManager {
 
     SaleIntern() {

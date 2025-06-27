@@ -1,3 +1,5 @@
+package Extend;
+
 class Sale extends SaleManager {
 
     public String level = "销售员P3";

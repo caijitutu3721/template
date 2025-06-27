@@ -1,3 +1,5 @@
+package Extend;
+
 public class SalesAssistant extends SaleManager {
 
     SalesAssistant() {

@@ -1,3 +1,5 @@
+package Extend;
+
 public class SaleManager extends Employee {
     private double bonus;
     public String level = "经理P4";
