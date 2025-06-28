@@ -13,13 +13,13 @@ public class ClickMonitor {
         }
     }
 
-    public void start() {
+    public void start(String name) {
         while (true) {
             if (listener1 != null) {
-                listener1.onClick();
+                listener1.onClick(name);
             }
             if (listener2 != null) {
-                listener2.onClick();
+                listener2.onClick(name);
             }
         }
     }

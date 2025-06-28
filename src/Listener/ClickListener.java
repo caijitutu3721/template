@@ -1,6 +1,5 @@
 package Listener;
 
 public interface ClickListener {
-    public abstract void onClick();
-
+    public abstract void onClick(String s);
 }
